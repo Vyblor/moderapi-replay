@@ -12,8 +12,6 @@ from __future__ import annotations
 
 import json
 import logging
-import math
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -133,13 +131,17 @@ def calibrate_attribute(
             "Isotonic selected (agreement: %.3f vs OLS %.3f)", iso_agreement, ols_agreement
         )
         return (
-            CalibrationCoefficients(slope=0.0, intercept=0.0, r_squared=r_squared, method="isotonic"),
+            CalibrationCoefficients(
+                slope=0.0, intercept=0.0, r_squared=r_squared, method="isotonic"
+            ),
             iso_model,
         )
     else:
         logger.info("OLS selected (agreement: %.3f vs isotonic %.3f)", ols_agreement, iso_agreement)
         return (
-            CalibrationCoefficients(slope=slope, intercept=intercept, r_squared=r_squared, method="ols"),
+            CalibrationCoefficients(
+                slope=slope, intercept=intercept, r_squared=r_squared, method="ols"
+            ),
             None,
         )
 

@@ -19,7 +19,6 @@ import logging
 import signal
 import sys
 from pathlib import Path
-from typing import Optional
 
 import typer
 from rich.console import Console
@@ -44,7 +43,9 @@ def _handle_sigint(signum: int, frame: object) -> None:
         console.print("\n[red]Force quit.[/red]")
         sys.exit(1)
     _shutdown_requested = True
-    console.print("\n[yellow]Shutting down gracefully... (press Ctrl+C again to force quit)[/yellow]")
+    console.print(
+        "\n[yellow]Shutting down gracefully... (Ctrl+C again to force)[/yellow]"
+    )
     if _partial_results:
         console.print(f"[yellow]Saving {len(_partial_results)} partial results...[/yellow]")
 
@@ -66,7 +67,7 @@ def replay(
     calibration_file: Path = typer.Option(
         "calibration.json", "--calibration", "-c", help="Path to calibration.json"
     ),
-    output: Optional[Path] = typer.Option(None, "--output", "-o", help="Output HTML report path"),
+    output: Path | None = typer.Option(None, "--output", "-o", help="Output HTML report path"),
     redact: bool = typer.Option(True, "--redact/--no-redact", help="Redact user text in reports"),
     verbose: bool = typer.Option(False, "--verbose", "-v"),
 ) -> None:
@@ -82,10 +83,9 @@ def replay(
         raise typer.Exit(1)
 
     # Load calibration if available
-    cal_config = None
+    _cal_config = None
     if calibration_file.exists():
-        from moderapi.calibration import load_calibration
-        cal_config = load_calibration(calibration_file)
+        _cal_config = load_calibration(calibration_file)
         console.print(f"[green]Loaded calibration from {calibration_file}[/green]")
     else:
         console.print("[yellow]No calibration.json found — using raw Detoxify scores[/yellow]")
@@ -118,7 +118,9 @@ def replay(
 @app.command()
 def calibrate(
     input_file: Path = typer.Argument(..., help="JSONL file with paired Perspective + text data"),
-    output: Path = typer.Option("calibration.json", "--output", "-o", help="Output calibration file"),
+    output: Path = typer.Option(
+        "calibration.json", "--output", "-o", help="Output calibration file"
+    ),
     verbose: bool = typer.Option(False, "--verbose", "-v"),
 ) -> None:
     """Fit calibration coefficients from paired Perspective/Detoxify scores."""
@@ -165,7 +167,9 @@ def serve(
     try:
         import uvicorn  # noqa: F401
     except ImportError:
-        console.print("[red]Server requires the [server] extra: pip install moderapi-replay[server][/red]")
+        console.print(
+            "[red]Server requires [server] extra: pip install moderapi-replay[server][/red]"
+        )
         raise typer.Exit(1)
 
     console.print("[yellow]Server implementation is Phase 2 — not yet available[/yellow]")
