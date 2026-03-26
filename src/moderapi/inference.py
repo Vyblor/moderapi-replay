@@ -19,6 +19,10 @@ from moderapi.exceptions import InferenceError, ModelDownloadError, ModelLoadErr
 from moderapi.parser import DETOXIFY_TO_PERSPECTIVE
 
 logger = logging.getLogger(__name__)
+
+# Suppress noisy third-party loggers
+for _lib in ("httpx", "httpcore", "urllib3", "transformers", "huggingface_hub"):
+    logging.getLogger(_lib).setLevel(logging.WARNING)
 console = Console(stderr=True)
 
 # Singleton model instance

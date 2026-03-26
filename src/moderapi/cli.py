@@ -166,7 +166,10 @@ def serve(
         import uvicorn  # noqa: F401
     except ImportError:
         console.print(
-            "[red]Server requires [server] extra: pip install moderapi-replay[server][/red]"
+            "Server requires [server] extra: pip install moderapi-replay[server]",
+            style="red",
+            highlight=False,
+            markup=False,
         )
         raise typer.Exit(1)
 
