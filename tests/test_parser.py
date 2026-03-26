@@ -3,9 +3,7 @@
 import json
 from pathlib import Path
 
-import pytest
-
-from moderapi.parser import parse_jsonl, DETOXIFY_TO_PERSPECTIVE, PERSPECTIVE_TO_DETOXIFY
+from moderapi.parser import DETOXIFY_TO_PERSPECTIVE, PERSPECTIVE_TO_DETOXIFY, parse_jsonl
 
 
 def test_parse_valid_jsonl(sample_jsonl: Path):

@@ -43,9 +43,7 @@ def _handle_sigint(signum: int, frame: object) -> None:
         console.print("\n[red]Force quit.[/red]")
         sys.exit(1)
     _shutdown_requested = True
-    console.print(
-        "\n[yellow]Shutting down gracefully... (Ctrl+C again to force)[/yellow]"
-    )
+    console.print("\n[yellow]Shutting down gracefully... (Ctrl+C again to force)[/yellow]")
     if _partial_results:
         console.print(f"[yellow]Saving {len(_partial_results)} partial results...[/yellow]")
 

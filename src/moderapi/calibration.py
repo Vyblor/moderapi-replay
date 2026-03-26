@@ -127,9 +127,7 @@ def calibrate_attribute(
 
     # Pick whichever has better threshold agreement on train data
     if iso_model is not None and iso_agreement > ols_agreement:
-        logger.info(
-            "Isotonic selected (agreement: %.3f vs OLS %.3f)", iso_agreement, ols_agreement
-        )
+        logger.info("Isotonic selected (agreement: %.3f vs OLS %.3f)", iso_agreement, ols_agreement)
         return (
             CalibrationCoefficients(
                 slope=0.0, intercept=0.0, r_squared=r_squared, method="isotonic"
@@ -151,9 +149,11 @@ def save_calibration(config: CalibrationConfig, path: Path) -> None:
     try:
         # Pre-check disk space (rough estimate: calibration.json < 10KB)
         import shutil
+
         free_bytes = shutil.disk_usage(path.parent).free
         if free_bytes < 1024 * 1024:  # 1MB minimum
             from moderapi.exceptions import DiskSpaceError
+
             raise DiskSpaceError(f"Less than 1MB free on {path.parent}")
 
         path.write_text(json.dumps(config.model_dump(), indent=2))

@@ -4,10 +4,10 @@ import numpy as np
 import pytest
 
 from moderapi.comparison import (
+    SEMANTIC_VIABILITY_THRESHOLD,
     _safe_spearman,
     evaluate_attribute,
     evaluate_gate,
-    SEMANTIC_VIABILITY_THRESHOLD,
 )
 from moderapi.exceptions import ConstantDataError, InsufficientDataError
 
@@ -58,12 +58,20 @@ def test_evaluate_gate():
 
     results = [
         AttributeGateResult(
-            attribute="TOXICITY", viable=True, spearman_raw=0.9,
-            spearman_calibrated=0.9, threshold_agreement=0.95, gate_passed=True,
+            attribute="TOXICITY",
+            viable=True,
+            spearman_raw=0.9,
+            spearman_calibrated=0.9,
+            threshold_agreement=0.95,
+            gate_passed=True,
         ),
         AttributeGateResult(
-            attribute="PROFANITY", viable=False, spearman_raw=0.3,
-            spearman_calibrated=0.0, threshold_agreement=0.0, gate_passed=False,
+            attribute="PROFANITY",
+            viable=False,
+            spearman_raw=0.3,
+            spearman_calibrated=0.0,
+            threshold_agreement=0.0,
+            gate_passed=False,
         ),
     ]
     gate = evaluate_gate(results)

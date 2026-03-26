@@ -7,7 +7,6 @@ of migrating from Perspective API to ModerAPI.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
 
 
 @dataclass
@@ -45,6 +44,7 @@ def estimate_migration(description: str) -> MigrationEstimate:
 
     # Detect attributes
     from moderapi.models import Attribute
+
     attrs_used = [a.value for a in Attribute if a.value.lower() in desc_lower]
 
     # Detect thresholds

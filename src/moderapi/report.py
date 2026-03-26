@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from moderapi.exceptions import DiskSpaceError, ReportError
-from moderapi.models import AttributeGateResult, GateResult
+from moderapi.models import GateResult
 
 logger = logging.getLogger(__name__)
 
@@ -50,20 +50,31 @@ def generate_html_report(
 
     rows = []
     for attr in gate_result.attributes:
-        status = "✅ PASS" if attr.gate_passed else ("⚠️ INCOMPATIBLE" if not attr.viable else "❌ FAIL")
-        ci_sp = f"[{attr.spearman_ci_lower:.3f}, {attr.spearman_ci_upper:.3f}]" if attr.viable else "—"
-        ci_ta = f"[{attr.threshold_agreement_ci_lower:.3f}, {attr.threshold_agreement_ci_upper:.3f}]" if attr.viable else "—"
+        if attr.gate_passed:
+            status = "✅ PASS"
+        elif not attr.viable:
+            status = "⚠️ INCOMPATIBLE"
+        else:
+            status = "❌ FAIL"
+        ci_sp = (
+            f"[{attr.spearman_ci_lower:.3f}, {attr.spearman_ci_upper:.3f}]" if attr.viable else "—"
+        )
+        ci_ta = (
+            f"[{attr.threshold_agreement_ci_lower:.3f}, {attr.threshold_agreement_ci_upper:.3f}]"
+            if attr.viable
+            else "—"
+        )
 
         ablation_cells = ""
         if ablation_data and attr.attribute in ablation_data:
             ab = ablation_data[attr.attribute]
             ablation_cells = f"""
-            <td>{ab.get('raw_spearman', 0):.3f}</td>
-            <td>{ab.get('ols_spearman', 0):.3f}</td>
-            <td>{ab.get('isotonic_spearman', 0):.3f}</td>"""
+            <td>{ab.get("raw_spearman", 0):.3f}</td>
+            <td>{ab.get("ols_spearman", 0):.3f}</td>
+            <td>{ab.get("isotonic_spearman", 0):.3f}</td>"""
 
         rows.append(f"""
-        <tr class="{'pass' if attr.gate_passed else 'fail'}">
+        <tr class="{"pass" if attr.gate_passed else "fail"}">
             <td><strong>{html.escape(attr.attribute)}</strong></td>
             <td>{attr.spearman_raw:.3f}</td>
             <td>{attr.spearman_calibrated:.3f}</td>
@@ -88,7 +99,11 @@ def generate_html_report(
     <meta charset="UTF-8">
     <title>ModerAPI Replay — Parity Report</title>
     <style>
-        body {{ font-family: -apple-system, system-ui, sans-serif; max-width: 1200px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }}
+        body {{
+            font-family: -apple-system, system-ui, sans-serif;
+            max-width: 1200px; margin: 2rem auto;
+            padding: 0 1rem; color: #1a1a1a;
+        }}
         h1 {{ border-bottom: 2px solid #333; padding-bottom: 0.5rem; }}
         table {{ border-collapse: collapse; width: 100%; margin: 1rem 0; }}
         th, td {{ border: 1px solid #ddd; padding: 8px 12px; text-align: left; }}
@@ -106,7 +121,7 @@ def generate_html_report(
     <p>Generated: {now}</p>
 
     <div class="summary">
-        <p>Gate result: <span class="{'gate-pass' if gate_result.overall_viable else 'gate-fail'}">
+        <p>Gate result: <span class="{"gate-pass" if gate_result.overall_viable else "gate-fail"}">
             {gate_result.passed_count}/{gate_result.total_count} attributes passed
         </span></p>
         <p>Gate criteria: Spearman &ge; 0.85 AND threshold agreement &ge; 90% at T=0.8</p>
@@ -128,7 +143,7 @@ def generate_html_report(
             </tr>
         </thead>
         <tbody>
-            {''.join(rows)}
+            {"".join(rows)}
         </tbody>
     </table>
 

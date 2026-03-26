@@ -16,7 +16,6 @@ from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
 from moderapi.exceptions import InferenceError, ModelDownloadError, ModelLoadError
-from moderapi.models import Attribute
 from moderapi.parser import DETOXIFY_TO_PERSPECTIVE
 
 logger = logging.getLogger(__name__)

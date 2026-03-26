@@ -46,10 +46,7 @@ def sample_jsonl(tmp_path: Path) -> Path:
     for i in range(10):
         record = {
             "text": f"Sample text number {i}",
-            "scores": {
-                attr.value: round(0.1 * i + 0.05, 2)
-                for attr in Attribute
-            },
+            "scores": {attr.value: round(0.1 * i + 0.05, 2) for attr in Attribute},
         }
         lines.append(json.dumps(record))
     p.write_text("\n".join(lines))

@@ -16,7 +16,7 @@ import numpy as np
 from scipy import stats
 
 from moderapi.calibration import threshold_agreement
-from moderapi.exceptions import ComparisonError, ConstantDataError, InsufficientDataError
+from moderapi.exceptions import ConstantDataError, InsufficientDataError
 from moderapi.models import AttributeGateResult, GateResult
 
 logger = logging.getLogger(__name__)
@@ -126,7 +126,9 @@ def evaluate_attribute(
     if not viable:
         logger.info(
             "Attribute %s: semantically incompatible (raw Spearman %.3f < %.1f)",
-            attribute, spearman_raw, SEMANTIC_VIABILITY_THRESHOLD,
+            attribute,
+            spearman_raw,
+            SEMANTIC_VIABILITY_THRESHOLD,
         )
         return AttributeGateResult(
             attribute=attribute,
@@ -174,7 +176,7 @@ def evaluate_gate(attribute_results: list[AttributeGateResult]) -> GateResult:
     """Compute overall gate result (per-attribute, not all-or-nothing)."""
     passed = sum(1 for r in attribute_results if r.gate_passed)
     total = len(attribute_results)
-    viable_count = sum(1 for r in attribute_results if r.viable)
+    _viable_count = sum(1 for r in attribute_results if r.viable)
 
     return GateResult(
         attributes=attribute_results,

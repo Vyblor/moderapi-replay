@@ -10,10 +10,17 @@ def test_generate_html_report():
     gate = GateResult(
         attributes=[
             AttributeGateResult(
-                attribute="TOXICITY", viable=True, spearman_raw=0.9,
-                spearman_calibrated=0.92, spearman_ci_lower=0.88, spearman_ci_upper=0.95,
-                threshold_agreement=0.94, threshold_agreement_ci_lower=0.90,
-                threshold_agreement_ci_upper=0.97, calibration_method="ols", gate_passed=True,
+                attribute="TOXICITY",
+                viable=True,
+                spearman_raw=0.9,
+                spearman_calibrated=0.92,
+                spearman_ci_lower=0.88,
+                spearman_ci_upper=0.95,
+                threshold_agreement=0.94,
+                threshold_agreement_ci_lower=0.90,
+                threshold_agreement_ci_upper=0.97,
+                calibration_method="ols",
+                gate_passed=True,
             ),
         ],
         passed_count=1,

@@ -5,8 +5,8 @@ from moderapi.models import (
     AnalyzeResponse,
     Attribute,
     AttributeScore,
-    CalibrationConfig,
     CalibrationCoefficients,
+    CalibrationConfig,
     GateResult,
     SummaryScore,
     TextEntry,
@@ -28,11 +28,7 @@ def test_analyze_request():
 
 def test_analyze_response():
     resp = AnalyzeResponse(
-        attributeScores={
-            "TOXICITY": AttributeScore(
-                summaryScore=SummaryScore(value=0.85)
-            )
-        }
+        attributeScores={"TOXICITY": AttributeScore(summaryScore=SummaryScore(value=0.85))}
     )
     assert resp.attributeScores["TOXICITY"].summaryScore.value == 0.85
 

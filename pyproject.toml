@@ -72,6 +72,7 @@ target-version = "py310"
 line-length = 100
 
 [tool.ruff.lint]
+per-file-ignores = {"src/moderapi/models.py" = ["N815"]}
 select = ["E", "F", "I", "N", "W", "UP"]
 
 [tool.mypy]
