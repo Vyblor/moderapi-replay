@@ -1,0 +1,50 @@
+{"text": "Hello, how are you doing today?", "scores": {"TOXICITY": 0.0045, "SEVERE_TOXICITY": 0.0048, "IDENTITY_ATTACK": 0.0442, "INSULT": 0.1468, "PROFANITY": 0.1349, "THREAT": 0.1083}}
+{"text": "This is a great article, thanks for sharing!", "scores": {"TOXICITY": 0.0066, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.0, "INSULT": 0.0232, "PROFANITY": 0.0, "THREAT": 0.0}}
+{"text": "I think your argument is well-reasoned.", "scores": {"TOXICITY": 0.11, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.1188, "INSULT": 0.1629, "PROFANITY": 0.0023, "THREAT": 0.0915}}
+{"text": "Can someone help me understand this topic better?", "scores": {"TOXICITY": 0.0758, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.1992, "INSULT": 0.0751, "PROFANITY": 0.0263, "THREAT": 0.0}}
+{"text": "What a beautiful day it is outside.", "scores": {"TOXICITY": 0.1494, "SEVERE_TOXICITY": 0.1258, "IDENTITY_ATTACK": 0.1746, "INSULT": 0.1359, "PROFANITY": 0.2233, "THREAT": 0.0143}}
+{"text": "I respectfully disagree with that point of view.", "scores": {"TOXICITY": 0.1532, "SEVERE_TOXICITY": 0.0673, "IDENTITY_ATTACK": 0.1596, "INSULT": 0.1028, "PROFANITY": 0.1282, "THREAT": 0.0}}
+{"text": "Thank you for this thoughtful discussion.", "scores": {"TOXICITY": 0.0, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.0, "INSULT": 0.0, "PROFANITY": 0.0, "THREAT": 0.0397}}
+{"text": "Has anyone tried the new restaurant downtown?", "scores": {"TOXICITY": 0.0351, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.0145, "INSULT": 0.1484, "PROFANITY": 0.0907, "THREAT": 0.0401}}
+{"text": "The weather forecast looks promising this weekend.", "scores": {"TOXICITY": 0.0798, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.0099, "INSULT": 0.1319, "PROFANITY": 0.062, "THREAT": 0.0216}}
+{"text": "I appreciate your perspective on this matter.", "scores": {"TOXICITY": 0.1744, "SEVERE_TOXICITY": 0.1081, "IDENTITY_ATTACK": 0.0517, "INSULT": 0.0123, "PROFANITY": 0.0689, "THREAT": 0.0}}
+{"text": "You are the worst person I have ever met.", "scores": {"TOXICITY": 0.8477, "SEVERE_TOXICITY": 0.4548, "IDENTITY_ATTACK": 0.722, "INSULT": 0.7902, "PROFANITY": 0.7382, "THREAT": 0.3106}}
+{"text": "Shut up you idiot, nobody asked you.", "scores": {"TOXICITY": 0.7815, "SEVERE_TOXICITY": 0.3636, "IDENTITY_ATTACK": 0.8408, "INSULT": 0.781, "PROFANITY": 0.8454, "THREAT": 0.3281}}
+{"text": "I hope something terrible happens to you.", "scores": {"TOXICITY": 0.7557, "SEVERE_TOXICITY": 0.5054, "IDENTITY_ATTACK": 0.8137, "INSULT": 0.73, "PROFANITY": 0.7213, "THREAT": 0.1655}}
+{"text": "You are so stupid it hurts to read your posts.", "scores": {"TOXICITY": 0.9341, "SEVERE_TOXICITY": 0.4223, "IDENTITY_ATTACK": 0.7884, "INSULT": 0.852, "PROFANITY": 0.9749, "THREAT": 0.2685}}
+{"text": "Everyone in this group is a complete moron.", "scores": {"TOXICITY": 1.0, "SEVERE_TOXICITY": 0.3882, "IDENTITY_ATTACK": 1.0, "INSULT": 1.0, "PROFANITY": 0.9793, "THREAT": 0.2449}}
+{"text": "Go away and never come back you loser.", "scores": {"TOXICITY": 0.8018, "SEVERE_TOXICITY": 0.4267, "IDENTITY_ATTACK": 0.8702, "INSULT": 0.9702, "PROFANITY": 0.9546, "THREAT": 0.2165}}
+{"text": "Your opinion is garbage and so are you.", "scores": {"TOXICITY": 0.7759, "SEVERE_TOXICITY": 0.5026, "IDENTITY_ATTACK": 0.9143, "INSULT": 0.7999, "PROFANITY": 0.868, "THREAT": 0.2738}}
+{"text": "I will find where you live.", "scores": {"TOXICITY": 0.7953, "SEVERE_TOXICITY": 0.3793, "IDENTITY_ATTACK": 0.7985, "INSULT": 0.7489, "PROFANITY": 0.6429, "THREAT": 0.1877}}
+{"text": "People like you should not be allowed to exist.", "scores": {"TOXICITY": 0.7913, "SEVERE_TOXICITY": 0.4285, "IDENTITY_ATTACK": 0.7718, "INSULT": 0.667, "PROFANITY": 0.617, "THREAT": 0.2872}}
+{"text": "You disgust me beyond words.", "scores": {"TOXICITY": 0.8823, "SEVERE_TOXICITY": 0.4798, "IDENTITY_ATTACK": 0.879, "INSULT": 1.0, "PROFANITY": 1.0, "THREAT": 0.2152}}
+{"text": "This movie was okay, not great but not terrible.", "scores": {"TOXICITY": 0.4525, "SEVERE_TOXICITY": 0.1743, "IDENTITY_ATTACK": 0.5171, "INSULT": 0.4272, "PROFANITY": 0.3849, "THREAT": 0.1406}}
+{"text": "I found the book somewhat disappointing.", "scores": {"TOXICITY": 0.4592, "SEVERE_TOXICITY": 0.2218, "IDENTITY_ATTACK": 0.618, "INSULT": 0.549, "PROFANITY": 0.5066, "THREAT": 0.1592}}
+{"text": "The service at that place was below average.", "scores": {"TOXICITY": 0.2812, "SEVERE_TOXICITY": 0.1358, "IDENTITY_ATTACK": 0.354, "INSULT": 0.2823, "PROFANITY": 0.2803, "THREAT": 0.0151}}
+{"text": "Not sure I agree but I see where you are coming from.", "scores": {"TOXICITY": 0.4351, "SEVERE_TOXICITY": 0.3257, "IDENTITY_ATTACK": 0.5613, "INSULT": 0.4035, "PROFANITY": 0.4369, "THREAT": 0.1806}}
+{"text": "The ending could have been better honestly.", "scores": {"TOXICITY": 0.2907, "SEVERE_TOXICITY": 0.2692, "IDENTITY_ATTACK": 0.3785, "INSULT": 0.3588, "PROFANITY": 0.4212, "THREAT": 0.1708}}
+{"text": "Some parts were good, others not so much.", "scores": {"TOXICITY": 0.2765, "SEVERE_TOXICITY": 0.1648, "IDENTITY_ATTACK": 0.3418, "INSULT": 0.3505, "PROFANITY": 0.4029, "THREAT": 0.1418}}
+{"text": "It was an average experience overall.", "scores": {"TOXICITY": 0.5149, "SEVERE_TOXICITY": 0.2781, "IDENTITY_ATTACK": 0.5631, "INSULT": 0.6676, "PROFANITY": 0.545, "THREAT": 0.1166}}
+{"text": "I expected more from this product.", "scores": {"TOXICITY": 0.419, "SEVERE_TOXICITY": 0.173, "IDENTITY_ATTACK": 0.3845, "INSULT": 0.5192, "PROFANITY": 0.4232, "THREAT": 0.2026}}
+{"text": "The quality has gone down recently.", "scores": {"TOXICITY": 0.3752, "SEVERE_TOXICITY": 0.3324, "IDENTITY_ATTACK": 0.5323, "INSULT": 0.5589, "PROFANITY": 0.5504, "THREAT": 0.2093}}
+{"text": "There are both pros and cons to consider here.", "scores": {"TOXICITY": 0.347, "SEVERE_TOXICITY": 0.1177, "IDENTITY_ATTACK": 0.3301, "INSULT": 0.2616, "PROFANITY": 0.3257, "THREAT": 0.202}}
+{"text": "This is absolutely wonderful, I love everything about it!", "scores": {"TOXICITY": 0.0907, "SEVERE_TOXICITY": 0.0079, "IDENTITY_ATTACK": 0.0185, "INSULT": 0.1253, "PROFANITY": 0.133, "THREAT": 0.0213}}
+{"text": "You are an amazing person and the world needs more people like you.", "scores": {"TOXICITY": 0.0056, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.1684, "INSULT": 0.0905, "PROFANITY": 0.0831, "THREAT": 0.072}}
+{"text": "What an incredible achievement, congratulations!", "scores": {"TOXICITY": 0.032, "SEVERE_TOXICITY": 0.0081, "IDENTITY_ATTACK": 0.0857, "INSULT": 0.0, "PROFANITY": 0.1073, "THREAT": 0.0}}
+{"text": "This community is one of the best I have ever been part of.", "scores": {"TOXICITY": 0.0457, "SEVERE_TOXICITY": 0.0484, "IDENTITY_ATTACK": 0.0, "INSULT": 0.0, "PROFANITY": 0.1048, "THREAT": 0.0}}
+{"text": "Your kindness and generosity inspire me every day.", "scores": {"TOXICITY": 0.0874, "SEVERE_TOXICITY": 0.0156, "IDENTITY_ATTACK": 0.0802, "INSULT": 0.0681, "PROFANITY": 0.1504, "THREAT": 0.0}}
+{"text": "F*** off you piece of garbage.", "scores": {"TOXICITY": 0.898, "SEVERE_TOXICITY": 0.4543, "IDENTITY_ATTACK": 0.9846, "INSULT": 0.9103, "PROFANITY": 0.9135, "THREAT": 0.3355}}
+{"text": "I will destroy everything you care about.", "scores": {"TOXICITY": 0.8518, "SEVERE_TOXICITY": 0.5298, "IDENTITY_ATTACK": 0.9594, "INSULT": 0.7748, "PROFANITY": 0.8028, "THREAT": 0.2111}}
+{"text": "You worthless sack of filth.", "scores": {"TOXICITY": 1.0, "SEVERE_TOXICITY": 0.5662, "IDENTITY_ATTACK": 0.9546, "INSULT": 0.9122, "PROFANITY": 1.0, "THREAT": 0.3349}}
+{"text": "Kill yourself nobody would miss you.", "scores": {"TOXICITY": 1.0, "SEVERE_TOXICITY": 0.4986, "IDENTITY_ATTACK": 0.8372, "INSULT": 0.9991, "PROFANITY": 0.8955, "THREAT": 0.3134}}
+{"text": "Your entire family is trash.", "scores": {"TOXICITY": 0.9083, "SEVERE_TOXICITY": 0.4138, "IDENTITY_ATTACK": 0.9029, "INSULT": 0.9921, "PROFANITY": 0.9359, "THREAT": 0.3154}}
+{"text": "The political situation is concerning but we should remain hopeful.", "scores": {"TOXICITY": 0.1342, "SEVERE_TOXICITY": 0.1236, "IDENTITY_ATTACK": 0.1463, "INSULT": 0.1912, "PROFANITY": 0.2746, "THREAT": 0.1273}}
+{"text": "Scientists have discovered a new species in the deep ocean.", "scores": {"TOXICITY": 0.0532, "SEVERE_TOXICITY": 0.0, "IDENTITY_ATTACK": 0.0, "INSULT": 0.1227, "PROFANITY": 0.0959, "THREAT": 0.0}}
+{"text": "The economy shows mixed signals heading into next quarter.", "scores": {"TOXICITY": 0.2086, "SEVERE_TOXICITY": 0.0847, "IDENTITY_ATTACK": 0.1002, "INSULT": 0.1133, "PROFANITY": 0.2749, "THREAT": 0.1403}}
+{"text": "Local volunteers organized a cleanup event at the park.", "scores": {"TOXICITY": 0.226, "SEVERE_TOXICITY": 0.0961, "IDENTITY_ATTACK": 0.0887, "INSULT": 0.0846, "PROFANITY": 0.1208, "THREAT": 0.1275}}
+{"text": "A new study suggests exercise improves mental health.", "scores": {"TOXICITY": 0.2814, "SEVERE_TOXICITY": 0.1844, "IDENTITY_ATTACK": 0.1512, "INSULT": 0.1591, "PROFANITY": 0.1298, "THREAT": 0.1188}}
+{"text": "The city council voted to approve the new transit plan.", "scores": {"TOXICITY": 0.2081, "SEVERE_TOXICITY": 0.1375, "IDENTITY_ATTACK": 0.1577, "INSULT": 0.3128, "PROFANITY": 0.2997, "THREAT": 0.1633}}
+{"text": "Researchers are making progress on renewable energy storage.", "scores": {"TOXICITY": 0.2884, "SEVERE_TOXICITY": 0.011, "IDENTITY_ATTACK": 0.2595, "INSULT": 0.1786, "PROFANITY": 0.2983, "THREAT": 0.1241}}
+{"text": "The school board announced changes to the curriculum.", "scores": {"TOXICITY": 0.285, "SEVERE_TOXICITY": 0.0648, "IDENTITY_ATTACK": 0.2803, "INSULT": 0.1444, "PROFANITY": 0.2972, "THREAT": 0.1386}}
+{"text": "Community members gathered to celebrate the annual festival.", "scores": {"TOXICITY": 0.1578, "SEVERE_TOXICITY": 0.0393, "IDENTITY_ATTACK": 0.0555, "INSULT": 0.1536, "PROFANITY": 0.04, "THREAT": 0.0}}
+{"text": "Technology continues to evolve at a rapid pace.", "scores": {"TOXICITY": 0.0543, "SEVERE_TOXICITY": 0.1172, "IDENTITY_ATTACK": 0.182, "INSULT": 0.0445, "PROFANITY": 0.1169, "THREAT": 0.0065}}
