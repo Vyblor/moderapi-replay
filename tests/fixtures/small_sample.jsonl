@@ -1,0 +1,10 @@
+{"text": "This is a perfectly normal comment about the weather.", "scores": {"TOXICITY": 0.05, "SEVERE_TOXICITY": 0.01, "IDENTITY_ATTACK": 0.02, "INSULT": 0.03, "PROFANITY": 0.02, "THREAT": 0.01}}
+{"text": "I respectfully disagree with your point.", "scores": {"TOXICITY": 0.08, "SEVERE_TOXICITY": 0.01, "IDENTITY_ATTACK": 0.01, "INSULT": 0.05, "PROFANITY": 0.01, "THREAT": 0.01}}
+{"text": "That was a terrible idea and you should feel bad.", "scores": {"TOXICITY": 0.72, "SEVERE_TOXICITY": 0.15, "IDENTITY_ATTACK": 0.05, "INSULT": 0.85, "PROFANITY": 0.08, "THREAT": 0.03}}
+{"text": "You are an absolute idiot for thinking that.", "scores": {"TOXICITY": 0.95, "SEVERE_TOXICITY": 0.45, "IDENTITY_ATTACK": 0.12, "INSULT": 0.97, "PROFANITY": 0.35, "THREAT": 0.05}}
+{"text": "Great article! Very informative and well-written.", "scores": {"TOXICITY": 0.03, "SEVERE_TOXICITY": 0.01, "IDENTITY_ATTACK": 0.01, "INSULT": 0.02, "PROFANITY": 0.01, "THREAT": 0.01}}
+{"text": "People like you are the problem with this country.", "scores": {"TOXICITY": 0.88, "SEVERE_TOXICITY": 0.25, "IDENTITY_ATTACK": 0.45, "INSULT": 0.78, "PROFANITY": 0.05, "THREAT": 0.15}}
+{"text": "Can someone explain how this feature works?", "scores": {"TOXICITY": 0.04, "SEVERE_TOXICITY": 0.01, "IDENTITY_ATTACK": 0.01, "INSULT": 0.02, "PROFANITY": 0.01, "THREAT": 0.01}}
+{"text": "Shut up you worthless piece of garbage.", "scores": {"TOXICITY": 0.98, "SEVERE_TOXICITY": 0.85, "IDENTITY_ATTACK": 0.15, "INSULT": 0.96, "PROFANITY": 0.92, "THREAT": 0.12}}
+{"text": "I think we should consider a different approach.", "scores": {"TOXICITY": 0.06, "SEVERE_TOXICITY": 0.01, "IDENTITY_ATTACK": 0.01, "INSULT": 0.03, "PROFANITY": 0.01, "THREAT": 0.01}}
+{"text": "This is mildly annoying but not the end of the world.", "scores": {"TOXICITY": 0.35, "SEVERE_TOXICITY": 0.03, "IDENTITY_ATTACK": 0.02, "INSULT": 0.25, "PROFANITY": 0.05, "THREAT": 0.02}}

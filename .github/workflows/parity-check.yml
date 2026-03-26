@@ -1,0 +1,27 @@
+name: Parity Check
+
+on:
+  workflow_call:
+  push:
+    branches: [main]
+    paths:
+      - "src/moderapi/calibration.py"
+      - "src/moderapi/inference.py"
+      - "src/moderapi/comparison.py"
+      - "calibration.json"
+
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+      - name: Run parity check against frozen baseline
+        run: |
+          # Validates calibration against committed test fixtures
+          # Does NOT call live Perspective API
+          pytest tests/test_parity.py -v --tb=long
