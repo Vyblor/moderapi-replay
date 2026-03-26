@@ -33,7 +33,7 @@ console = Console()
 
 # Graceful shutdown state
 _shutdown_requested = False
-_partial_results: list = []
+_partial_results: list[dict[str, object]] = []
 
 
 def _handle_sigint(signum: int, frame: object) -> None:
@@ -144,7 +144,7 @@ def estimate(
     table.add_row("Complexity", result.complexity_score.upper())
     table.add_row("Estimated Hours", f"{result.estimated_hours:.0f}h")
     table.add_row("API Call Sites", str(result.api_call_count))
-    table.add_row("Attributes Used", ", ".join(result.unique_attributes_used) or "—")
+    table.add_row("Attributes Used", ", ".join(result.unique_attributes_used or []) or "—")
     table.add_row("Threshold References", str(result.threshold_references))
 
     console.print(table)

@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import logging
 import math
+from collections.abc import Callable
 
 import numpy as np
 from scipy import stats
@@ -55,7 +56,7 @@ def _safe_spearman(a: np.ndarray, b: np.ndarray) -> float:
 def _bootstrap_ci(
     a: np.ndarray,
     b: np.ndarray,
-    metric_fn: callable,
+    metric_fn: Callable[[np.ndarray, np.ndarray], float],
     n_iterations: int = BOOTSTRAP_ITERATIONS,
     ci: float = BOOTSTRAP_CI,
 ) -> tuple[float, float]:

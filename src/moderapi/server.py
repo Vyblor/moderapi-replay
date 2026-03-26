@@ -8,6 +8,6 @@ Returns calibrated Detoxify scores in Perspective API response format.
 from __future__ import annotations
 
 
-def create_app():
+def create_app() -> None:
     """Create the FastAPI application. Phase 2 — not yet implemented."""
     raise NotImplementedError("Server is Phase 2 — build only if hard gate passes")

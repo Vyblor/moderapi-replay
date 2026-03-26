@@ -11,6 +11,7 @@ import logging
 import sys
 from collections.abc import Iterator
 from pathlib import Path
+from typing import Any
 
 from moderapi.exceptions import StreamingParseError, UnicodeParseError
 from moderapi.models import Attribute, ReplayRecord
@@ -87,7 +88,7 @@ def parse_jsonl(path: Path, max_line_bytes: int = 10 * 1024 * 1024) -> Iterator[
         raise StreamingParseError(f"Cannot read {path}: {e}") from e
 
 
-def _parse_record(data: dict, line_num: int) -> ReplayRecord | None:
+def _parse_record(data: dict[str, Any], line_num: int) -> ReplayRecord | None:
     """Parse a single JSON object into a ReplayRecord."""
     text = data.get("text")
     if not isinstance(text, str) or not text.strip():
